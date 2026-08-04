@@ -53,18 +53,17 @@
         <div class="text-center mb-16">
             <h2 class="text-2xl md:text-3xl font-light tracking-widest uppercase mb-3">Ausgewählte Werke</h2>
             <div class="w-12 h-[1px] bg-accentGold mx-auto"></div>
-            <p class="text-xs text-slate-400 mt-4">點擊下方按鈕即可從電腦選擇新圖片替換畫作</p>
+            <p class="text-xs text-slate-400 mt-4">點擊下方按鈕即可從電腦選擇新圖片替換畫作（支援大型高畫質圖片自動儲存）</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <!-- Artwork 1 -->
             <div class="group bg-cardBg rounded-sm overflow-hidden border border-slate-800/60 hover:border-accentGold/50 transition duration-300">
-                <div id="img-container-1" class="aspect-square overflow-hidden bg-slate-900 relative flex items-center justify-center">
+                <div class="aspect-square overflow-hidden bg-slate-900 relative flex items-center justify-center">
                     <img id="artwork-img-1" src="LINE_NOTE_260803_1.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 z-0" alt="Ether Matrix">
                     <span class="absolute top-4 left-4 bg-darkBg/80 text-xs px-3 py-1 text-accentGold tracking-wider uppercase border border-slate-700 z-10">Original</span>
                     
-                    <!-- 電腦選圖按鈕層 -->
-                    <div class="absolute inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
+                    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
                         <label class="cursor-pointer bg-accentGold text-darkBg px-4 py-2 text-xs tracking-widest uppercase font-medium hover:bg-white transition">
                             選擇電腦圖片 <input type="file" accept="image/*" class="hidden" onchange="handleImageUpload(event, 'artwork-img-1', 'img-1')">
                         </label>
@@ -81,12 +80,11 @@
 
             <!-- Artwork 2 -->
             <div class="group bg-cardBg rounded-sm overflow-hidden border border-slate-800/60 hover:border-accentGold/50 transition duration-300">
-                <div id="img-container-2" class="aspect-square overflow-hidden bg-slate-900 relative flex items-center justify-center">
+                <div class="aspect-square overflow-hidden bg-slate-900 relative flex items-center justify-center">
                     <img id="artwork-img-2" src="LINE_NOTE_260803_2.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 z-0" alt="Cosmic Heart">
                     <span class="absolute top-4 left-4 bg-darkBg/80 text-xs px-3 py-1 text-slate-300 tracking-wider uppercase border border-slate-700 z-10">Limitierter Druck</span>
                     
-                    <!-- 電腦選圖按鈕層 -->
-                    <div class="absolute inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
+                    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
                         <label class="cursor-pointer bg-accentGold text-darkBg px-4 py-2 text-xs tracking-widest uppercase font-medium hover:bg-white transition">
                             選擇電腦圖片 <input type="file" accept="image/*" class="hidden" onchange="handleImageUpload(event, 'artwork-img-2', 'img-2')">
                         </label>
@@ -103,12 +101,11 @@
 
             <!-- Artwork 3 -->
             <div class="group bg-cardBg rounded-sm overflow-hidden border border-slate-800/60 hover:border-accentGold/50 transition duration-300">
-                <div id="img-container-3" class="aspect-square overflow-hidden bg-slate-900 relative flex items-center justify-center">
+                <div class="aspect-square overflow-hidden bg-slate-900 relative flex items-center justify-center">
                     <img id="artwork-img-3" src="LINE_NOTE_260803_4.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 z-0" alt="Silent Zero">
                     <span class="absolute top-4 left-4 bg-darkBg/80 text-xs px-3 py-1 text-accentGold tracking-wider uppercase border border-slate-700 z-10">Original</span>
                     
-                    <!-- 電腦選圖按鈕層 -->
-                    <div class="absolute inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
+                    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
                         <label class="cursor-pointer bg-accentGold text-darkBg px-4 py-2 text-xs tracking-widest uppercase font-medium hover:bg-white transition">
                             選擇電腦圖片 <input type="file" accept="image/*" class="hidden" onchange="handleImageUpload(event, 'artwork-img-3', 'img-3')">
                         </label>
@@ -132,8 +129,7 @@
                 <div class="aspect-[3/4] bg-slate-800 border border-slate-700 relative flex items-center justify-center overflow-hidden group">
                     <img id="artwork-img-portrait" src="LINE_ALBUM_讓我依依不捨的妳_260723_17.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Künstlerporträt">
                     
-                    <!-- 電腦選圖按鈕層 (肖像) -->
-                    <div class="absolute inset-0 bg-black/60 backdrop-blur-xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
+                    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
                         <label class="cursor-pointer bg-accentGold text-darkBg px-3 py-1.5 text-[10px] tracking-widest uppercase font-medium hover:bg-white transition">
                             選擇圖片 <input type="file" accept="image/*" class="hidden" onchange="handleImageUpload(event, 'artwork-img-portrait', 'portrait')">
                         </label>
@@ -155,17 +151,66 @@
         <p>&copy; 2026 Aura Mandala. Alle Rechte vorbehalten. Berlin / München.</p>
     </footer>
 
-    <!-- 圖片上傳互動邏輯 -->
+    <!-- 採用 IndexedDB 的大型圖檔儲存與互動邏輯 -->
     <script>
-        // 頁面載入時，檢查瀏覽器是否有暫存過使用者上傳的圖片
-        window.onload = function() {
-            ['1', '2', '3', 'portrait'].forEach(id => {
-                const savedImg = localStorage.getItem('mandala_img_' + id);
-                if (savedImg) {
-                    const imgElement = document.getElementById(id === 'portrait' ? 'artwork-img-portrait' : 'artwork-img-' + id);
-                    if (imgElement) imgElement.src = savedImg;
-                }
+        const DB_NAME = 'MandalaArtDB';
+        const STORE_NAME = 'images';
+        const DB_VERSION = 1;
+
+        // 初始化 IndexedDB
+        function openDB() {
+            return new Promise((resolve, reject) => {
+                const request = indexedDB.open(DB_NAME, DB_VERSION);
+                request.onerror = () => reject(request.error);
+                request.onsuccess = () => resolve(request.result);
+                request.onupgradeneeded = (event) => {
+                    const db = event.target.result;
+                    if (!db.objectStoreNames.contains(STORE_NAME)) {
+                        db.createObjectStore(STORE_NAME);
+                    }
+                };
             });
+        }
+
+        // 儲存圖片至 IndexedDB
+        async function saveImageToDB(key, base64Data) {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const transaction = db.transaction(STORE_NAME, 'readwrite');
+                const store = transaction.objectStore(STORE_NAME);
+                const request = store.put(base64Data, key);
+                request.onsuccess = () => resolve(true);
+                request.onerror = () => reject(request.error);
+            });
+        }
+
+        // 從 IndexedDB 讀取圖片
+        async function getImageFromDB(key) {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const transaction = db.transaction(STORE_NAME, 'readonly');
+                const store = transaction.objectStore(STORE_NAME);
+                const request = store.get(key);
+                request.onsuccess = () => resolve(request.result);
+                request.onerror = () => reject(request.error);
+            });
+        }
+
+        // 頁面載入時，自動從資料庫還原所有上傳過的圖片
+        window.onload = async function() {
+            const keys = ['1', '2', '3', 'portrait'];
+            for (const key of keys) {
+                try {
+                    const savedImg = await getImageFromDB(key);
+                    if (savedImg) {
+                        const imgElementId = key === 'portrait' ? 'artwork-img-portrait' : 'artwork-img-' + key;
+                        const imgElement = document.getElementById(imgElementId);
+                        if (imgElement) imgElement.src = savedImg;
+                    }
+                } catch (err) {
+                    console.error('讀取圖片失敗:', err);
+                }
+            }
         };
 
         // 處理圖片上傳與預覽
@@ -173,7 +218,7 @@
             const file = event.target.files[0];
             if (file) {
                 const reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = async function(e) {
                     const base64Data = e.target.result;
                     
                     // 即時替換畫面上的圖片
@@ -182,12 +227,13 @@
                         imgElement.src = base64Data;
                     }
                     
-                    // 儲存到瀏覽器的 LocalStorage，這樣重新整理後圖片依然會保留
+                    // 儲存到瀏覽器的 IndexedDB
                     try {
-                        localStorage.setItem('mandala_img_' + storageKey, base64Data);
-                        alert('✅ 圖片上傳成功！');
+                        await saveImageToDB(storageKey, base64Data);
+                        alert('✅ 圖片已成功上傳並永久儲存於瀏覽器資料庫中！');
                     } catch (err) {
-                        alert('⚠️ 圖片檔案太大，超過瀏覽器儲存限制 (5MB)，但畫面已成功顯示。');
+                        alert('⚠️ 儲存失敗，請確認瀏覽器儲存空間是否足夠。');
+                        console.error(err);
                     }
                 };
                 reader.readAsDataURL(file);
